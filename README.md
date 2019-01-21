@@ -2,7 +2,7 @@
 
 Ionic4 App, Binge API, Service Provider, Ionic Native Geoencoder API
 
-This App runs only when installed on device not on browser because Native Geoencoder API is supported only on device and not by browser. 
+This App runs only when installed on device not on browser because Native Geoencoder API is supported only on device and not by browser .The ionic provider service parses Json object into list from file provided by Binge API .
 
 This App used Ionic 4 NativeGeocoder API and provider service to fetch Real time traffic data provided by BING Traffic API. The App first calculated a standard bounded area based on the location provided(entered by user) and it then provides the following information about all the real time traffic incidences in that bounded area .
 1. start coordinate, end coordinate
