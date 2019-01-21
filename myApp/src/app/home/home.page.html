@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color ="primary">
+    <ion-title  >
+      <h5> <b>TRAFFIC APP</b></h5>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding color="$cardcolor">
+  <ion-item class="items">
+    <ion-label class="label"  ><h1><b>EnterLocation:</b></h1></ion-label>
+  <ion-input class="items"[(ngModel)]="addstring"> eg</ion-input>
+
+  </ion-item>
+  <h1>{{maparea}}}</h1>
+  <ion-button (click)="submitlocation()">Find Traffic Data</ion-button>
+  <h1></h1>
+  <h1>error:{{err}}</h1>
+  <h1>Total Traffic incidents: {{no_of_incidents}}</h1>
+
+
+
+    <ion-item color="$cardcolor" *ngFor="let accitem of accidents">
+      <ion-card >
+
+
+      <ion-item class="items" color="primary"><h4><b>Description: </b> </h4><h6><b>{{accitem.description}}</b></h6></ion-item>
+      <ion-item class="items" ><h4><b>StartDate: </b> </h4><h6><b>{{accitem.start}}</b></h6></ion-item>
+      <ion-item class="items"><h4><b>EndDate: </b> </h4><h6><b>{{accitem.end}}</b></h6></ion-item>
+      <ion-item class="items" ><h4><b>Starting Coordinates: </b> </h4><h6><b> {{accitem.point.coordinates[0]}}, {{accitem.point.coordinates[1]}}</b></h6></ion-item>
+      <ion-item class="items" ><h4><b>Ending Coordinates: </b></h4><h6><b> {{accitem.toPoint.coordinates[0]}}, {{accitem.point.coordinates[1]}}</b></h6></ion-item>
+      <ion-item class="items"><h4><b>Road Closed: </b></h4><h6><b>  {{accitem.roadClosed}}</b></h6></ion-item>
+        <ion-item class="items" color="$itemcolor"color="setcolor(acciitem)"><h4><b>Severity Level: </b></h4><h2><b>{{accitem.severity}}</b></h2></ion-item>
+
+
+    </ion-card>
+
+
+  </ion-item>
+
+</ion-content>

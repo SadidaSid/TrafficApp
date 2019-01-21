@@ -1,0 +1,19 @@
+
+ [ {
+    "id":"album1",
+    "name" : "Miles Davis 1",
+    "birthDate" : 6363
+  },
+    {"id":"album2",
+      "name" : "Miles Davis 2",
+    "birthDate" : 6363
+    },
+    { "id":"album3",
+      "name" : "Miles Davis 3",
+    "birthDate" : 6363
+    },
+    {"id":"album4",
+      "name" : "Miles Davis 4",
+    "birthDate" : 6363
+    } ]
+
